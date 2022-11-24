@@ -7,7 +7,7 @@ export default class JsonTablePlugin extends Plugin {
       "jsontable",
       async (jsonSpecString: string, el, ctx) => {
         try {
-          let tableSpec: jsonTableSpec = {
+          let tableSpec = {
             source: "", // Assert that this has a proper value below
           };
           try {

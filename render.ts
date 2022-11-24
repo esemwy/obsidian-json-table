@@ -21,8 +21,7 @@ export class TableRenderer extends MarkdownRenderChild {
     for (const headerLine of this.headers) {
       const headerEl = theadEl.createEl('tr');
       for (const header of headerLine) {
-        const thEl = headerEl.createEl('th');
-        thEl.createEl('b', { text: header });
+        headerEl.createEl('th', { text: header });
       }
     }
 
